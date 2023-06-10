@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(245, 245, 220, 0.668);
+            }
+        .inside{
+            width: 30%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 30px 30px;
+            gap: 5px;
+
+        }
+        button{
+            grid-column: span 2;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="/calc" method="post">
+        <div class="container">
+            <div class="inside">
+                <input type="text" name="n1" id="" placeholder="enter number">
+                <input type="text" name="n2" id="" placeholder="enter number">
+                <button type="submit">calculate</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
